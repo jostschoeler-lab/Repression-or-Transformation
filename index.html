@@ -9,8 +9,14 @@
       content="Sieben schön gestaltete Themenkacheln mit einem hervorgehobenen Grundlagenbereich."
     />
     <link rel="stylesheet" href="styles.css" />
+    <script src="preview-toggle.js" defer></script>
   </head>
   <body>
+    <nav class="device-switcher" aria-label="Ansicht umschalten">
+      <button class="device-switcher__button" type="button" data-preview-mode="desktop" aria-pressed="true">▭ Breit</button>
+      <button class="device-switcher__button" type="button" data-preview-mode="mobile" aria-pressed="false">▯ Mobil</button>
+    </nav>
+    <div class="site-shell">
     <header class="hero" id="start">
       <div class="hero__content">
         <p class="eyebrow">Innere Kämpfe ehrlich ansehen</p>
@@ -116,5 +122,6 @@
       <p><strong>Ein Angebot von Joel Schowler · Norwegen</strong></p>
       <p>Kombination aus biblischem Glauben und bewährten psychologischen Erkenntnissen – für Menschen, die echte Verwandlung suchen.</p>
     </footer>
+    </div>
   </body>
 </html>

@@ -9,8 +9,14 @@
       content="Die fünf Säulen des inneren Heilungswegs mit biblisch fundierten Modellen für echte Veränderung."
     />
     <link rel="stylesheet" href="styles.css" />
+    <script src="preview-toggle.js" defer></script>
   </head>
   <body>
+    <nav class="device-switcher" aria-label="Ansicht umschalten">
+      <button class="device-switcher__button" type="button" data-preview-mode="desktop" aria-pressed="true">▭ Breit</button>
+      <button class="device-switcher__button" type="button" data-preview-mode="mobile" aria-pressed="false">▯ Mobil</button>
+    </nav>
+    <div class="site-shell">
     <header class="foundation-hero">
       <p class="foundation-hero__eyebrow">Grundlagen des inneren Heilungswegs</p>
       <h1>Biblisch fundierte Modelle für echte Veränderung</h1>
@@ -80,5 +86,6 @@
 
       <p class="foundation-back"><a href="index.html#themen">← Zurück zur Übersicht</a></p>
     </main>
+    </div>
   </body>
 </html>
