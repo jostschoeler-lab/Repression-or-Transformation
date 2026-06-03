@@ -10,25 +10,43 @@
     <header class="hero">
       <div class="hero__content">
         <p class="eyebrow">PDF-Buchbereich</p>
-        <h1>Das Buch kommt bald</h1>
+        <h1>Verwandlung oder Verdrängung?</h1>
         <p class="hero__lead">
-          Sobald die PDF-Datei bereit ist, kann dieser Bereich direkt mit einem PDF-Reader
-          oder einem eingebetteten PDF auf dein Buch verweisen.
+          Lies das Buch direkt im Browser oder öffne die PDF-Datei in einem neuen Tab.
         </p>
         <a class="button button--accent" href="index.html#start">← Zurück zur Startseite</a>
       </div>
     </header>
 
     <main>
-      <section class="reader-placeholder" aria-labelledby="reader-title">
-        <h2 id="reader-title">Platz für den späteren PDF-Reader</h2>
-        <p>
-          Hier kann später die Datei deines Buches eingebunden werden, zum Beispiel als
-          eingebettetes PDF oder über einen spezialisierten PDF-Reader.
-        </p>
-        <div class="reader-placeholder__box" aria-label="PDF-Reader-Platzhalter">
-          <span>PDF-Reader / Buchvorschau</span>
+      <section class="pdf-reader" aria-labelledby="reader-title">
+        <div class="pdf-reader__header">
+          <div>
+            <p class="eyebrow eyebrow--dark">Buch als PDF</p>
+            <h2 id="reader-title">PDF-Reader</h2>
+          </div>
+          <a class="button button--dark" href="assets/verwandlung-oder-verdraengung.pdf" target="_blank" rel="noreferrer">
+            PDF in neuem Tab öffnen
+          </a>
         </div>
+
+        <object
+          class="pdf-reader__frame"
+          data="assets/verwandlung-oder-verdraengung.pdf"
+          type="application/pdf"
+          aria-label="PDF-Reader für das Buch Verwandlung oder Verdrängung?"
+        >
+          <p>
+            Dein Browser kann die PDF-Datei hier nicht direkt anzeigen.
+            <a href="assets/verwandlung-oder-verdraengung.pdf" target="_blank" rel="noreferrer">Öffne die PDF-Datei in einem neuen Tab</a>
+            oder lade sie herunter.
+          </p>
+        </object>
+
+        <p class="pdf-reader__hint">
+          Lege deine PDF-Datei im Ordner <code>assets</code> ab und nenne sie
+          <code>verwandlung-oder-verdraengung.pdf</code>. Dann wird sie hier automatisch angezeigt.
+        </p>
       </section>
     </main>
   </body>
